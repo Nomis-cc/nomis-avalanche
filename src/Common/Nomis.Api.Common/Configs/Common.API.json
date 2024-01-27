@@ -1,0 +1,8 @@
+{
+  "ApiCommonSettings": {
+    "UseSwagger": true,
+    "UseSwaggerCaching": true,
+    "SerilogSinkToConsole": true,
+    "SerilogConsoleOutputTemplate": "{Timestamp:HH:mm:ss} [{Level}] {Message}{NewLine:1}{Exception}"
+  }
+}

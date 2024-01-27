@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\Nomis.Api.Common\Nomis.Api.Common.csproj" />
+    <ProjectReference Include="..\Nomis.MailingService.Interfaces\Nomis.MailingService.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\MailServices.API.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

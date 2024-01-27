@@ -1,0 +1,6 @@
+{
+  "HapiExplorerSettings": {
+    "ApiBaseUrl": "https://explorer-api.hapi.one/",
+    "BlockchainProviderUrl": ""
+  }
+}

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Storage\Nomis.DataAccess.Referral.Interfaces\Nomis.DataAccess.Referral.Interfaces.csproj" />
+    <ProjectReference Include="..\Nomis.ReferralService.Interfaces\Nomis.ReferralService.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\Referral.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

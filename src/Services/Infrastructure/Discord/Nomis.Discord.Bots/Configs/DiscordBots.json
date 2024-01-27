@@ -1,0 +1,81 @@
+{
+  "DiscordBotsSettings": {
+    "IsEnabled": true,
+    "BotToken": "",
+    "CommandsPrefix": "/",
+    "ScoreImageBaseUrl": "https://images.nomis.cc",
+    "ScoresChannelId": 1162869208032489632,
+    "SendChannelDelay": "00:00:00.100",
+    "ExcludedScorers": [],
+    "ExplorersBaseUrl": {
+      "Multichain": "https://polygonscan.com/address/",
+      "ZkSync": "https://explorer.zksync.io/address/",
+      "LayerZero": "https://arbiscan.io/address/",
+      "DeFi": "https://optimistic.etherscan.io/address/",
+      "ZkEVM": "https://zkevm.polygonscan.com/address/",
+      "Linea": "https://lineascan.build/address/",
+      "Strateg": "https://snowtrace.io/address/",
+      "Mantle": "https://explorer.mantle.xyz/address/"
+    },
+    "UpdateLinks": {
+      "Multichain": "[Multichain](https://nomis.cc/multichain)",
+      "ZkSync": "[zkSync Era](https://nomis.cc/zksync)",
+      "LayerZero": "[LayerZero](https://nomis.cc/layerzero)",
+      "DeFi": "[DeFi by Rubic](https://nomis.cc/rubic)",
+      "ZkEVM": "[Polygon zkEVM](https://nomis.cc/polygon-zkevm)",
+      "Linea": "[Linea](https://nomis.cc/linea)",
+      "Strateg": "[Strateg](https://nomis.cc/strateg)",
+      "Mantle": "[Mantle](https://nomis.cc/mantle)"
+    },
+    "MarketplacesBaseUrl": {
+      "Multichain": [
+        "[Rarible](https://rarible.com/token/polygon/0x4724F4B3936B4c2d52f8F452719870c5d4c86b4D:{0})",
+        "[OpenSea](https://opensea.io/assets/matic/0x4724f4b3936b4c2d52f8f452719870c5d4c86b4d/{0})"
+      ],
+      "ZkSync": [
+        "[Element](https://element.market/assets/zksync/0xAbe08390C1d5c7FdB6fc6F17EEd6c8CfC193A259/{0})",
+        "[Zonic](https://zonic.app/asset/zksync/0xAbe08390C1d5c7FdB6fc6F17EEd6c8CfC193A259/{0})"
+      ],
+      "LayerZero": [
+        "[OpenSea](https://opensea.io/assets/arbitrum/0xc388fae5c90e0fb95ca1e76674a3439db07a6579/{0})",
+        "[Zonic](https://zonic.app/asset/arbitrum_one/0xC388Fae5C90E0Fb95CA1E76674A3439db07A6579/{0})"
+      ],
+      "DeFi": [
+        "[Zonic](https://zonic.app/asset/optimism/0xe2627BaB7AF74e333f3D89E4Bd78C919d8b930E8/{0})"
+      ],
+      "ZkEVM": [
+        "[Zonic](https://zonic.app/asset/polygonzkevm/0x46874eDd92d5A33216fe2e151759Ead76Ff43747/{0})"
+      ],
+      "Linea": [
+        "[Zonic](https://zonic.app/asset/linea/0xe2627BaB7AF74e333f3D89E4Bd78C919d8b930E8/{0})",
+        "[OpenSea](https://opensea.io/assets/linea/0xe2627BaB7AF74e333f3D89E4Bd78C919d8b930E8/{0})"
+      ],
+      "Strateg": [
+        "[Element](https://element.market/assets/avalanche//{0})"
+      ],
+      "Mantle": [
+        "[Zonic](https://zonic.app/asset/mantle/0xe2627BaB7AF74e333f3D89E4Bd78C919d8b930E8/{0})"
+      ]
+    },
+    "EventsIdEnabled": false,
+    "EventsDelay": "00:00:15",
+    "SocketConfig": {
+      "LogLevel": "Warning",
+      "AlwaysDownloadUsers": true,
+      "MessageCacheSize": 200,
+      "UseInteractionSnowflakeDate": false,
+      "HandlerTimeout": 60000
+    },
+    "CommandConfig": {
+      "CaseSensitiveCommands": false,
+      "LogLevel": "Warning",
+      "DefaultRunMode": "Async"
+    },
+    "InteractionConfig": {
+      "LogLevel": "Warning",
+      "UseCompiledLambda": true,
+      "DefaultRunMode": "Async",
+      "ThrowOnError": true
+    }
+  }
+}

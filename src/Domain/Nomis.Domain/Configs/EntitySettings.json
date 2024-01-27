@@ -1,0 +1,6 @@
+{
+  "EntitySettings": {
+    "SoftDeleteEnabled": true,
+    "EnableAudit": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ProxyServiceSettings": {
+    "WebProxies": [
+      {
+        "IsEnabled": true,
+        "Id": "A3849C62-9306-4186-AAAD-42C03BB87FF9",
+        "Uri": "",
+        "Group": "Paid",
+        "UseCredentials": true,
+        "UserName": "",
+        "Password": ""
+      },
+      {
+        "IsEnabled": true,
+        "Id": "11CD72C7-A817-4BBA-948C-D96E9651BB8C",
+        "Uri": "",
+        "Group": "Paid",
+        "UseCredentials": true,
+        "UserName": "",
+        "Password": ""
+      },
+      {
+        "IsEnabled": false,
+        "Id": "9E71A8D5-95F2-49E7-8D3F-DFF14577D776",
+        "Uri": "",
+        "Group": "Own",
+        "UseCredentials": false
+      },
+      {
+        "IsEnabled": false,
+        "Id": "7572F15D-7A53-4A99-AE6C-B00360BD8506",
+        "Uri": "",
+        "Group": "Own",
+        "UseCredentials": false
+      }
+    ]
+  }
+}

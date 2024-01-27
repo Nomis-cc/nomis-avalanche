@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GraphQL.Client" />
+    <PackageReference Include="GraphQL.Client.Serializer.SystemTextJson" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nomis.Dex.Abstractions\Nomis.Dex.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

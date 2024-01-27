@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\Nomis.Api.Common\Nomis.Api.Common.csproj" />
+    <ProjectReference Include="..\Nomis.Covalent.Interfaces\Nomis.Covalent.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\Covalent.API.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

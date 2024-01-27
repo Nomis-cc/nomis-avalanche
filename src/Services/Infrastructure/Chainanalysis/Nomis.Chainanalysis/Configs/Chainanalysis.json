@@ -1,0 +1,6 @@
+{
+  "ChainanalysisSettings": {
+    "ApiKey": "",
+    "ApiBaseUrl": "https://public.chainalysis.com/"
+  }
+}

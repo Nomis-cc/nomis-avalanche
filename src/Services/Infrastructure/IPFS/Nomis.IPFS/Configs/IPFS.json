@@ -1,0 +1,9 @@
+{
+  "IPFSSettings": {
+    "Provider": "Pinata",
+    "ApiKey": "",
+    "ApiBaseUrl": "https://api.pinata.cloud/",
+    "ReadApiBaseUrl": "",
+    "IpfsGatewayUrlTemplate": "https://w3s.link/ipfs/{0}"
+  }
+}

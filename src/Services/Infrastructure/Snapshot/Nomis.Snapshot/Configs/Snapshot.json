@@ -1,0 +1,5 @@
+{
+  "SnapshotSettings": {
+    "ApiBaseUrl": "https://hub.snapshot.org/graphql"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "DeBankSettings": {
+    "ApiBaseUrl": "https://pro-openapi.debank.com/",
+    "ApiKey": "",
+    "MaxApiCallsPerSecond": 100,
+    "UseDeBankCaching": true,
+    "DeBankHoldTokensCacheDuration": "00:15:00",
+    "DeBankTokensDataCacheDuration": "01:00:00",
+    "HttpClientTimeout": "00:00:15",
+    "UseHttpClientRetrying": false,
+    "MaxRetries": 1,
+    "UseDefaultRetryTimeout": false,
+    "DefaultRetryTimeout": "00:00:01",
+    "RetryTimeouts": {
+      "TooManyRequests": "00:00:01"
+    }
+  }
+}

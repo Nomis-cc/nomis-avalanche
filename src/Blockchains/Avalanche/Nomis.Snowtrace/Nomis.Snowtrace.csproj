@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nethereum.Util" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Dexes\Common\Nomis.DexProviderService.Interfaces\Nomis.DexProviderService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\Services\Infrastructure\Other\Nomis.BalanceChecker.Interfaces\Nomis.BalanceChecker.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\Services\Infrastructure\DefiLlama\Nomis.DefiLlama.Interfaces\Nomis.DefiLlama.Interfaces.csproj" />
+    <ProjectReference Include="..\Nomis.Snowtrace.Interfaces\Nomis.Snowtrace.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\Avalanche.Snowtrace.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

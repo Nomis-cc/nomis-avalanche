@@ -1,0 +1,35 @@
+{
+  "ScoreSoulboundTokenSettings": {
+    "TokenImageApiBaseUrl": "https://images.nomis.cc/",
+    "SignatureApiBaseUrl": "",
+    "MetadataTokenName": "Nomis Score",
+    "MetadataTokenDescription": "Nomis is an open-source protocol that helps developers build better DeFi solutions and experiences.",
+    "MetadataTokenExternalUrl": "https://nomis.cc/tokens/",
+    "ONFTMetadataTokenName": "Nomis Pin",
+    "ONFTMetadataTokenDescription": "Omnichain badge that shows your support and contribution to the LayerZero ecosystem.",
+    "ONFTMetadataTokenExternalUrl": "https://nomis.cc/tokens/pin/",
+    "TokenData": {
+      "Finance": {
+        "0": {
+          "TokenName": "NMSS",
+          "Version": "0.1",
+          "SignerWalletPrivateKey": ""
+        }
+      },
+      "Token": {
+        "0": {
+          "TokenName": "NMSES",
+          "Version": "0.1",
+          "SignerWalletPrivateKey": ""
+        }
+      },
+      "Migration": {
+        "0": {
+          "TokenName": "NMSS",
+          "Version": "0.1",
+          "SignerWalletPrivateKey": ""
+        }
+      }
+    }
+  }
+}

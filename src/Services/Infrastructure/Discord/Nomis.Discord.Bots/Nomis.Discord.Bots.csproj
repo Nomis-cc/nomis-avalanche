@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <UserSecretsId>467dc294-2407-47c1-8685-8d5376517519</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Addons.Hosting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Blockchains\LayerZero\Nomis.LayerZeroService.Interfaces\Nomis.LayerZeroService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\..\Blockchains\Multichain\Nomis.MultichainScoreService.Interfaces\Nomis.MultichainScoreService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\..\Blockchains\Rubic\Nomis.RubicService.Interfaces\Nomis.RubicService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\..\Blockchains\ZkEVM\Nomis.ZkEvmPolygonscan.Interfaces\Nomis.ZkEvmPolygonscan.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\..\Blockchains\ZkSync\Nomis.Zkscan.Interfaces\Nomis.Zkscan.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Caching\Nomis.CacheProviderService.Interfaces\Nomis.CacheProviderService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Zealy\Nomis.Zealy.Interfaces\Nomis.Zealy.Interfaces.csproj" />
+    <ProjectReference Include="..\Nomis.Discord.Bots.Interfaces\Nomis.Discord.Bots.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\DiscordBots.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

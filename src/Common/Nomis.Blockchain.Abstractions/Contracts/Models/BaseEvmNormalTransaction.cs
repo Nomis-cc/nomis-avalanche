@@ -1,0 +1,55 @@
+﻿// ------------------------------------------------------------------------------------------------------
+// <copyright file="BaseEvmNormalTransaction.cs" company="Nomis">
+// Copyright (c) Nomis, 2023. All rights reserved.
+// The Application under the MIT license. See LICENSE file in the solution root for full license information.
+// </copyright>
+// ------------------------------------------------------------------------------------------------------
+
+using System.Text.Json.Serialization;
+
+namespace Nomis.Blockchain.Abstractions.Contracts.Models
+{
+    /// <summary>
+    /// Normal transaction.
+    /// </summary>
+    public class BaseEvmNormalTransaction :
+        INormalTransaction,
+        IBaseEvmTransfer
+    {
+        /// <inheritdoc />
+        [JsonPropertyName("timeStamp")]
+        public virtual string? Timestamp { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("contractAddress")]
+        public virtual string? ContractAddress { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("hash")]
+        public virtual string? Hash { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("from")]
+        public virtual string? From { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("to")]
+        public virtual string? To { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("value")]
+        public virtual string? Value { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("isError")]
+        public virtual string? IsError { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("blockNumber")]
+        public virtual string? BlockNumber { get; set; }
+
+        /// <inheritdoc />
+        [JsonPropertyName("functionName")]
+        public string? FunctionName { get; set; }
+    }
+}

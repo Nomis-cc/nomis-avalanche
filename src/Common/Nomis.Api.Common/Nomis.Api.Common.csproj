@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Npgsql" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" />
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\Application\Scoring\Nomis.ScoringService\Nomis.ScoringService.csproj" />
+    <ProjectReference Include="..\Nomis.Blockchain.Abstractions\Nomis.Blockchain.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\Common.API.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Configs\CORS.API.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="HealthChecks\" />
+  </ItemGroup>
+</Project>

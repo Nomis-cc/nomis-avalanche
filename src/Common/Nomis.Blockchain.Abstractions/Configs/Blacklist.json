@@ -1,0 +1,10 @@
+{
+  "BlacklistSettings": {
+    "UseBlacklist": false,
+    "Blacklist": {
+      "Breaker": [
+        "0xc6319617c2b7c100bacacb7bb8148d8d8666360a"
+      ]
+    }
+  }
+}

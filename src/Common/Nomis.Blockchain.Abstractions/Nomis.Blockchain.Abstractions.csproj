@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" />
+    <PackageReference Include="Nethereum.Util" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\Application\Referral\Nomis.ReferralService.Interfaces\Nomis.ReferralService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Application\Scoring\Nomis.ScoringService.Interfaces\Nomis.ScoringService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\Caching\Nomis.CacheProviderService.Interfaces\Nomis.CacheProviderService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\Chainanalysis\Nomis.Chainanalysis.Interfaces\Nomis.Chainanalysis.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\Covalent\Nomis.Covalent.Interfaces\Nomis.Covalent.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\DAO\Tally\Nomis.Tally.Interfaces\Nomis.Tally.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\DefiLlama\Nomis.DefiLlama.Interfaces\Nomis.DefiLlama.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\DeFi\Nomis.DeFi.Interfaces\Nomis.DeFi.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\Greysafe\Nomis.Greysafe.Interfaces\Nomis.Greysafe.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\IPFS\Nomis.IPFS.Interfaces\Nomis.IPFS.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\Other\Nomis.ProxyService.Interfaces\Nomis.ProxyService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\PolygonID\Nomis.PolygonId.Interfaces\Nomis.PolygonId.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\SBT\Nomis.SoulboundTokenService.Interfaces\Nomis.SoulboundTokenService.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\Snapshot\Nomis.Snapshot.Interfaces\Nomis.Snapshot.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Services\Infrastructure\Social\Nomis.CyberConnect.Interfaces\Nomis.CyberConnect.Interfaces.csproj" />
+    <ProjectReference Include="..\Nomis.Utils\Nomis.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Configs\Blacklist.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

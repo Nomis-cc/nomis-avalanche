@@ -1,0 +1,59 @@
+﻿// ------------------------------------------------------------------------------------------------------
+// <copyright file="ReferralDbSeeder.cs" company="Nomis">
+// Copyright (c) Nomis, 2023. All rights reserved.
+// The Application under the MIT license. See LICENSE file in the solution root for full license information.
+// </copyright>
+// ------------------------------------------------------------------------------------------------------
+
+using System.Reflection;
+
+using Microsoft.Extensions.Logging;
+using Nomis.DataAccess.Referral.Interfaces.Contexts;
+using Nomis.Domain;
+
+namespace Nomis.DataAccess.PostgreSql.Referral.Persistence
+{
+    /// <summary>
+    /// Referral database seeder.
+    /// </summary>
+    internal sealed class ReferralDbSeeder :
+        IDatabaseSeeder
+    {
+        private readonly ILogger<ReferralDbSeeder> _logger;
+        private readonly IReferralDbContext _context;
+
+        /// <summary>
+        /// Initialize <see cref="ReferralDbSeeder"/>.
+        /// </summary>
+        /// <param name="logger"><see cref="ILogger{T}"/>.</param>
+        /// <param name="context"><see cref="IReferralDbContext"/>.</param>
+        public ReferralDbSeeder(
+            ILogger<ReferralDbSeeder> logger,
+            IReferralDbContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
+
+        /// <summary>
+        /// Path to the directory with data for seeding the database.
+        /// </summary>
+        private static string SeedDataPath =>
+            Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? string.Empty, "Persistence", "SeedData");
+
+        /// <inheritdoc/>
+        public void Initialize()
+        {
+            try
+            {
+                // TODO - add methods for seeding
+
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e, "An error occurred while seeding Referral data.");
+            }
+        }
+    }
+}

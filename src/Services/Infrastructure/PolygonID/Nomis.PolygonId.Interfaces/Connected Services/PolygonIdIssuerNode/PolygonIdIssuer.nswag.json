@@ -1,0 +1,1420 @@
+﻿{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Polygon ID - Issuer",
+    "description": "Documentation for the Issuer\n",
+    "version": "1"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001",
+      "description": "Local"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Get the documentation",
+        "operationId": "GetDocumentation",
+        "responses": {
+          "200": {
+            "description": "success and returns the documentation in HTML format"
+          }
+        },
+        "x-internal": "true"
+      }
+    },
+    "/favicon.ico": {
+      "get": {
+        "summary": "Gets the favicon",
+        "operationId": "GetFavicon",
+        "responses": {
+          "200": {
+            "description": "success and returns a favicon"
+          }
+        },
+        "x-internal": "true"
+      }
+    },
+    "/static/docs/api/api.yaml": {
+      "get": {
+        "summary": "Get the documentation yaml file",
+        "operationId": "GetYaml",
+        "responses": {
+          "200": {
+            "description": "success and returns the documentation in Yaml format"
+          }
+        },
+        "x-internal": "true"
+      }
+    },
+    "/status": {
+      "get": {
+        "summary": "Healthcheck",
+        "operationId": "Health",
+        "responses": {
+          "200": {
+            "description": "All services are running",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        }
+      }
+    },
+    "/config": {
+      "get": {
+        "summary": "Get Config",
+        "operationId": "GetConfig",
+        "responses": {
+          "200": {
+            "description": "Config",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Config"
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/identities": {
+      "post": {
+        "tags": [
+          "Identity"
+        ],
+        "summary": "Create Identity",
+        "description": "Endpoint to create an identity",
+        "operationId": "CreateIdentity",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateIdentityRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Identity created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateIdentityResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500-CreateIdentity",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "Identity"
+        ],
+        "summary": "Get Identities",
+        "description": "Endpoint to get all the identities",
+        "operationId": "GetIdentities",
+        "responses": {
+          "200": {
+            "description": "all good",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "x-omitempty": "false"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/identities/{identifier}/details": {
+      "get": {
+        "tags": [
+          "Identity"
+        ],
+        "summary": "Identity Detail",
+        "description": "Endpoint to get an identity details",
+        "operationId": "GetIdentityDetails",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Identity top up successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetIdentityDetailsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/{identifier}/state/retry": {
+      "post": {
+        "tags": [
+          "Identity"
+        ],
+        "summary": "Retry Publish Identity State",
+        "operationId": "RetryPublishState",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Publish state successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishIdentityStateResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/{identifier}/state/publish": {
+      "post": {
+        "tags": [
+          "Identity"
+        ],
+        "summary": "Publish Identity State",
+        "description": "Endpoint to publish identity state",
+        "operationId": "PublishIdentityState",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "No transactions to process to the given identity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericErrorMessage"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Transaction ID of the published  state",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishIdentityStateResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/{identifier}/claims": {
+      "post": {
+        "tags": [
+          "Claim"
+        ],
+        "summary": "Create Claim",
+        "description": "Endpoint to create a Claim",
+        "operationId": "CreateClaim",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateClaimRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Claim created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateClaimResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "422": {
+            "$ref": "#/components/responses/422",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "Claim"
+        ],
+        "summary": "Get Claims",
+        "description": "Endpoint to retrieve claims \n> ⚠️ **self** and **subject** filter cannot be used together\n",
+        "operationId": "GetClaims",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          },
+          {
+            "name": "schemaType",
+            "in": "query",
+            "description": "Filter per schema type. Example - KYCAgeCredential",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "schemaHash",
+            "in": "query",
+            "description": "Filter per schema hash. Example - c9b2370371b7fa8b3dab2a5ba81b6838",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "description": "Filter per subject. Example - did:polygonid:polygon:mumbai:2qE1BZ7gcmEoP2KppvFPCZqyzyb5tK9T6Gec5HFANQ",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "revoked",
+            "in": "query",
+            "description": "Filter per claims revoked or not - Example - true.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "self",
+            "in": "query",
+            "description": "Filter per retrieve claims of the provided identifier. Example - true",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "query_field",
+            "in": "query",
+            "description": "Filter this field inside the data of the claim",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "query_value",
+            "in": "query",
+            "description": "Filter this value inside the data of the claim for the specified field in query_field",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Claims found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetClaimsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/{identifier}/claims/{id}": {
+      "get": {
+        "tags": [
+          "Claim"
+        ],
+        "summary": "Get Claim",
+        "description": "Endpoint to retrieve a created Claim",
+        "operationId": "GetClaim",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          },
+          {
+            "$ref": "#/components/parameters/pathClaim/schema"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Claim found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetClaimResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "404": {
+            "$ref": "#/components/responses/404",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/{identifier}/claims/revoke/{nonce}": {
+      "post": {
+        "tags": [
+          "Claim"
+        ],
+        "summary": "Revoke Claim",
+        "description": "Endpoint to revoke a claim",
+        "operationId": "RevokeClaim",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          },
+          {
+            "$ref": "#/components/parameters/pathNonce/schema"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RevokeClaimResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "401": {
+            "$ref": "#/components/responses/401",
+            "description": ""
+          },
+          "404": {
+            "$ref": "#/components/responses/404",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/{identifier}/claims/revocation/status/{nonce}": {
+      "get": {
+        "tags": [
+          "Claim"
+        ],
+        "summary": "Get Revocation Status",
+        "description": "Endpoint to get the revocation status",
+        "operationId": "GetRevocationStatus",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          },
+          {
+            "$ref": "#/components/parameters/pathNonce/schema"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Proof",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RevocationStatusResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        }
+      }
+    },
+    "/v1/{identifier}/claims/{id}/qrcode": {
+      "get": {
+        "tags": [
+          "Claim"
+        ],
+        "summary": "Get Claim QR code",
+        "description": "Returns a a json that can be used to create the QR Code to scan for accepting a claim.",
+        "operationId": "GetClaimQrCode",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/pathIdentifier/schema"
+          },
+          {
+            "$ref": "#/components/parameters/pathClaim/schema"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetClaimQrCodeResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "404": {
+            "$ref": "#/components/responses/404",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "basicAuth": []
+          }
+        ]
+      }
+    },
+    "/v1/agent": {
+      "post": {
+        "tags": [
+          "Agent"
+        ],
+        "summary": "Agent",
+        "description": "Mobile agent endpoint",
+        "operationId": "Agent",
+        "requestBody": {
+          "content": {
+            "text/plain": {
+              "schema": {
+                "type": "string",
+                "example": "jwz-token"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "TBD",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AgentResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        }
+      }
+    },
+    "/v1/qr-store": {
+      "get": {
+        "tags": [
+          "Agent"
+        ],
+        "summary": "QrCode body",
+        "description": "Returns a previously generated QR code via url shortener method",
+        "operationId": "GetQrFromStore",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "8edd8112-c415-11ed-b036-debe37e1cbd6",
+              "x-go-type": "uuid.UUID",
+              "x-go-type-import": {
+                "name": "uuid",
+                "path": "github.com/google/uuid"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A json to generate a QR code",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400",
+            "description": ""
+          },
+          "404": {
+            "$ref": "#/components/responses/404",
+            "description": ""
+          },
+          "500": {
+            "$ref": "#/components/responses/500",
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "KeyValue": {
+        "type": "object",
+        "required": [
+          "key",
+          "value"
+        ],
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      },
+      "Config": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/KeyValue"
+        }
+      },
+      "Health": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "boolean"
+        },
+        "x-omitempty": "false"
+      },
+      "GenericErrorMessage": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Something happen"
+          }
+        }
+      },
+      "CreateIdentityRequest": {
+        "type": "object",
+        "required": [
+          "didMetadata"
+        ],
+        "properties": {
+          "didMetadata": {
+            "type": "object",
+            "required": [
+              "method",
+              "blockchain",
+              "network",
+              "type"
+            ],
+            "properties": {
+              "method": {
+                "type": "string",
+                "example": "polygonid",
+                "x-omitempty": "false"
+              },
+              "blockchain": {
+                "type": "string",
+                "example": "polygon",
+                "x-omitempty": "false"
+              },
+              "network": {
+                "type": "string",
+                "example": "mumbai",
+                "x-omitempty": "false"
+              },
+              "type": {
+                "type": "string",
+                "example": "BJJ",
+                "enum": [
+                  "BJJ",
+                  "ETH"
+                ],
+                "x-omitempty": "false"
+              }
+            }
+          }
+        }
+      },
+      "CreateIdentityResponse": {
+        "type": "object",
+        "required": [
+          "identity",
+          "status"
+        ],
+        "properties": {
+          "identifier": {
+            "type": "string"
+          },
+          "state": {
+            "$ref": "#/components/schemas/IdentityState"
+          },
+          "address": {
+            "type": "string",
+            "x-omitempty": "false"
+          }
+        }
+      },
+      "GetIdentityDetailsResponse": {
+        "type": "object",
+        "required": [
+          "identity",
+          "status"
+        ],
+        "properties": {
+          "identifier": {
+            "type": "string"
+          },
+          "state": {
+            "$ref": "#/components/schemas/IdentityState"
+          },
+          "address": {
+            "type": "string"
+          },
+          "balance": {
+            "type": "string"
+          }
+        }
+      },
+      "IdentityState": {
+        "type": "object",
+        "required": [
+          "stateID",
+          "identifier",
+          "status",
+          "modifiedAt",
+          "createdAt"
+        ],
+        "properties": {
+          "stateID": {
+            "type": "integer",
+            "format": "int64",
+            "x-go-json-ignore": "true"
+          },
+          "identifier": {
+            "type": "string",
+            "x-go-json-ignore": "true"
+          },
+          "state": {
+            "type": "string"
+          },
+          "rootOfRoots": {
+            "type": "string"
+          },
+          "claimsTreeRoot": {
+            "type": "string"
+          },
+          "revocationTreeRoot": {
+            "type": "string"
+          },
+          "blockTimestamp": {
+            "type": "integer"
+          },
+          "blockNumber": {
+            "type": "integer"
+          },
+          "txID": {
+            "type": "string"
+          },
+          "previousState": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "modifiedAt": {
+            "$ref": "#/components/schemas/TimeUTC"
+          },
+          "createdAt": {
+            "$ref": "#/components/schemas/TimeUTC"
+          }
+        }
+      },
+      "PublishIdentityStateResponse": {
+        "type": "object",
+        "properties": {
+          "txID": {
+            "type": "string"
+          },
+          "claimsTreeRoot": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "revocationTreeRoot": {
+            "type": "string"
+          },
+          "rootOfRoots": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateClaimRequest": {
+        "type": "object",
+        "example": {
+          "credentialSchema": "https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json/KYCAgeCredential-v3.json",
+          "type": "KYCAgeCredential",
+          "credentialSubject": {
+            "id": "fill with did",
+            "birthday": "19960424",
+            "documentType": "2"
+          },
+          "expiration": "1903357766"
+        },
+        "required": [
+          "credentialSchema",
+          "type",
+          "credentialSubject"
+        ],
+        "properties": {
+          "credentialSchema": {
+            "type": "string",
+            "x-omitempty": "false"
+          },
+          "type": {
+            "type": "string",
+            "x-omitempty": "false"
+          },
+          "credentialSubject": {
+            "type": "object",
+            "x-omitempty": "false"
+          },
+          "expiration": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "version": {
+            "type": "integer",
+            "format": "uint32"
+          },
+          "revNonce": {
+            "type": "integer",
+            "format": "uint64"
+          },
+          "subjectPosition": {
+            "type": "string"
+          },
+          "merklizedRootPosition": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateClaimResponse": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-omitempty": "false"
+          }
+        }
+      },
+      "GetClaimsResponse": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/GetClaimResponse"
+        }
+      },
+      "GetClaimResponse": {
+        "type": "object",
+        "required": [
+          "id",
+          "@context",
+          "type",
+          "credentialSubject",
+          "credentialStatus",
+          "issuer",
+          "credentialSchema",
+          "proof"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-omitempty": "false"
+          },
+          "@context": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "x-omitempty": "false"
+          },
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "x-omitempty": "false"
+          },
+          "expiration": {
+            "$ref": "#/components/schemas/TimeUTC"
+          },
+          "issuanceDate": {
+            "$ref": "#/components/schemas/TimeUTC"
+          },
+          "credentialSubject": {
+            "type": "object",
+            "x-omitempty": "false"
+          },
+          "credentialStatus": {},
+          "issuer": {
+            "type": "string",
+            "x-omitempty": "false"
+          },
+          "credentialSchema": {
+            "$ref": "#/components/schemas/CredentialSchema",
+            "x-omitempty": "false"
+          },
+          "proof": {}
+        }
+      },
+      "QrCodeLinkShortResponse": {
+        "type": "string",
+        "example": "iden3comm://?request_uri=https%3A%2F%2Fissuer-demo.polygonid.me%2Fapi%2Fqr-store%3Fid%3Df780a169-8959-4380-9461-f7200e2ed3f4"
+      },
+      "GetClaimQrCodeResponse": {
+        "type": "object",
+        "required": [
+          "body",
+          "id",
+          "typ",
+          "type",
+          "thid",
+          "from",
+          "to"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "typ": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "thid": {
+            "type": "string"
+          },
+          "body": {
+            "type": "object",
+            "required": [
+              "url",
+              "credentials"
+            ],
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "credentials": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "description"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        }
+      },
+      "CredentialSchema": {
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-omitempty": "false"
+          },
+          "type": {
+            "type": "string",
+            "x-omitempty": "false"
+          }
+        }
+      },
+      "RevokeClaimResponse": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "pending",
+            "x-omitempty": "false"
+          }
+        }
+      },
+      "RevocationStatusResponse": {
+        "type": "object",
+        "required": [
+          "issuer",
+          "mtp"
+        ],
+        "properties": {
+          "issuer": {
+            "type": "object",
+            "properties": {
+              "state": {
+                "type": "string"
+              },
+              "rootOfRoots": {
+                "type": "string"
+              },
+              "claimsTreeRoot": {
+                "type": "string"
+              },
+              "revocationTreeRoot": {
+                "type": "string"
+              }
+            }
+          },
+          "mtp": {
+            "type": "object",
+            "required": [
+              "existence"
+            ],
+            "properties": {
+              "existence": {
+                "type": "boolean"
+              },
+              "siblings": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "x-omitempty": "false"
+              },
+              "node_aux": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ByteArray": {
+        "type": "string",
+        "format": "byte"
+      },
+      "AgentResponse": {
+        "type": "object",
+        "required": [
+          "body",
+          "id",
+          "typ",
+          "type",
+          "threadID",
+          "from",
+          "to"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "typ": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "threadID": {
+            "type": "string"
+          },
+          "body": {},
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        }
+      },
+      "TimeUTC": {
+        "type": "string",
+        "example": "2023-10-26T10:59:08Z",
+        "x-go-type": "timeapi.Time",
+        "x-go-type-import": {
+          "name": "timeapi",
+          "path": "github.com/polygonid/sh-id-platform/internal/timeapi"
+        },
+        "x-omitempty": "false"
+      }
+    },
+    "responses": {
+      "400": {
+        "description": "Bad Request",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GenericErrorMessage"
+            }
+          }
+        }
+      },
+      "401": {
+        "description": "Unauthorized",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GenericErrorMessage"
+            }
+          }
+        }
+      },
+      "402": {
+        "description": "Payment Required",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GenericErrorMessage"
+            }
+          }
+        }
+      },
+      "404": {
+        "description": "Not found",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GenericErrorMessage"
+            }
+          }
+        }
+      },
+      "407": {
+        "description": "Proxy Authentication Required",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GenericErrorMessage"
+            }
+          }
+        }
+      },
+      "422": {
+        "description": "Unprocessable Content",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GenericErrorMessage"
+            }
+          }
+        }
+      },
+      "500": {
+        "description": "Internal Server error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/GenericErrorMessage"
+            }
+          }
+        }
+      },
+      "500-CreateIdentity": {
+        "description": "Internal Server error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "requestID": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "integer"
+                },
+                "error": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "parameters": {
+      "pathIdentifier": {
+        "name": "identifier",
+        "in": "path",
+        "required": true,
+        "description": "Issuer identifier",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "pathClaim": {
+        "name": "id",
+        "in": "path",
+        "required": true,
+        "description": "Claim identifier",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "pathNonce": {
+        "name": "nonce",
+        "in": "path",
+        "required": true,
+        "description": "Claim nonce",
+        "schema": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "securitySchemes": {
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Identity",
+      "description": "Collection of endpoints related to Identity"
+    },
+    {
+      "name": "Claim",
+      "description": "Collection of endpoints related to Claims"
+    },
+    {
+      "name": "Agent",
+      "description": "Collection of endpoints related to Mobile"
+    }
+  ]
+}

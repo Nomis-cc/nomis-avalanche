@@ -1,0 +1,7 @@
+{
+  "ReferralSettings": {
+    "ReferralRewardBaseAmount": 0.0006,
+    "UseMultilevel": false,
+    "HideReferralsData": false
+  }
+}

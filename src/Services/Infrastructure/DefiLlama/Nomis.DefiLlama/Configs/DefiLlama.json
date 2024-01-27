@@ -1,0 +1,16 @@
+{
+  "DefiLlamaSettings": {
+    "ApiBaseUrl": "https://coins.llama.fi/",
+    "MaxApiCallsPerSecond": 10,
+    "TokenPriceUseCaching": true,
+    "TokenPriceCacheDuration": "00:15:00",
+    "RequestTokensBatchSize": 40,
+    "UseHttpClientRetrying": true,
+    "MaxRetries": 3,
+    "UseDefaultRetryTimeout": false,
+    "DefaultRetryTimeout": "00:00:01",
+    "RetryTimeouts": {
+      "TooManyRequests": "00:00:01"
+    }
+  }
+}

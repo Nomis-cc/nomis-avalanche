@@ -1,0 +1,14 @@
+{
+  "DeFiSettings": {
+    "ApiKey": "",
+    "ApiBaseUrl": "https://public-api.de.fi/graphql",
+    "MaxApiCallsPerSecond": 2,
+    "UseHttpClientRetrying": true,
+    "MaxRetries": 3,
+    "UseDefaultRetryTimeout": true,
+    "DefaultRetryTimeout": "00:00:01",
+    "RetryTimeouts": {
+      "TooManyRequests": "00:00:01"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ElasticMailServiceSettings": {
+    "BaseUrl": "https://api.elasticemail.com/v4/",
+    "ElasticMailApiKey": "",
+    "NewContactsListName": "NewSubscribers",
+    "WelcomeMailTemplateName": "Welcome Email"
+  }
+}

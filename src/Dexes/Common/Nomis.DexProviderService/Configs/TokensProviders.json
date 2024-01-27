@@ -1,0 +1,1467 @@
+{
+  "TokensProvidersSettings": {
+    "UseCaching": true,
+    "CacheSlidingExpiration": "01:00:00:00",
+    "TokensProviders": [
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "OneInch",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/1inch.json",
+          "Ethereum": "https://tokens.1inch.eth.link/"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Aave",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/bgd-labs/aave-tokenlist/main/tokenlist.json",
+          "Ethereum": "http://tokenlist.aave.eth.link/"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "BlockchainAssociation",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/The-Blockchain-Association/sec-notice-list/master/ba-sec-list.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "CmcDeFi",
+        "Urls": {
+          "Ethereum": "http://defi.cmc.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "CmcStablecoin",
+        "Urls": {
+          "Ethereum": "http://stablecoin.cmc.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Cmc200Erc20",
+        "Urls": {
+          "Ethereum": "http://erc20.cmc.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "AgoraDataFi",
+        "Urls": {
+          "Ethereum": "http://datafi.theagora.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "CoinGecko",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/coingecko.json",
+          "Ethereum": "https://tokens.coingecko.com/uniswap/all.json",
+          "Solana": "https://raw.githubusercontent.com/JuanRdBO/solana-token-list/main/src/tokens/solana.tokenlist.json",
+          "BSC": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/coingecko.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Compound",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/compound-finance/token-list/master/compound.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Defiprime",
+        "Urls": {
+          "Ethereum": "https://defiprime.com/defiprime.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Dharma",
+        "Urls": {
+          "Ethereum": "http://tokenlist.dharma.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Furucombo",
+        "Urls": {
+          "Ethereum": "https://cdn.furucombo.app/furucombo.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Gemini",
+        "Urls": {
+          "Ethereum": "https://www.gemini.com/uniswap/manifest.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Kleros",
+        "Urls": {
+          "Ethereum": "http://t2crtokens.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Messari",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/messari.json",
+          "Ethereum": "https://messari.io/tokenlist/messari-verified"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "MyCrypto",
+        "Urls": {
+          "Ethereum": "https://uniswap.mycryptoapi.com/"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Optimism",
+        "Urls": {
+          "None": "https://static.optimism.io/optimism.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "RollSocialMoney",
+        "Urls": {
+          "Ethereum": "https://app.tryroll.com/tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Set",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/SetProtocol/uniswap-tokenlist/main/set.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Synthetix",
+        "Urls": {
+          "Ethereum": "http://synths.snx.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Testnet",
+        "Urls": {
+          "None": "http://testnet.tokenlist.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Uniswap",
+        "Urls": {
+          "None": "https://gateway.ipfs.io/ipns/tokens.uniswap.org"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "UniswapPools",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/uniswap-pools.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "UniswapPairs",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/uniswap-pairs.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "WrappedTokens",
+        "Urls": {
+          "Ethereum": "http://wrapped.tokensoft.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Zerion",
+        "Urls": {
+          "Ethereum": "http://tokenlist.zerion.eth.link"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Uma",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/UMAprotocol/website/master/public/uma.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Balancer",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/balancer-labs/assets/master/generated/vetted.tokenlist.json",
+          "Polygon": "https://raw.githubusercontent.com/balancer-labs/assets/refactor-for-multichain/generated/polygon.vetted.tokenlist.json",
+          "ArbitrumOne": "https://raw.githubusercontent.com/balancer-labs/assets/refactor-for-multichain/generated/arbitrum.vetted.tokenlist.json",
+          "Gnosis": "https://raw.githubusercontent.com/balancer-labs/assets/refactor-for-multichain/generated/gnosis.vetted.tokenlist.json",
+          "Optimism": "https://raw.githubusercontent.com/balancer-labs/assets/refactor-for-multichain/generated/optimism.vetted.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "QuickSwap",
+        "Urls": {
+          "Polygon": "https://unpkg.com/quickswap-default-token-list/build/quickswap-default.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Tracer",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/dospore/tracer-balancer-token-list/master/tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "NetswapTop100",
+        "Urls": {
+          "Metis": "https://raw.githubusercontent.com/Netswap/token-lists/master/top100.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SonarWatch",
+        "Urls": {
+          "Ethereum": "https://cdn.jsdelivr.net/npm/@sonarwatch/token-lists/build/sonarwatch.ethereum.tokenlist.json",
+          "Polygon": "https://cdn.jsdelivr.net/npm/@sonarwatch/token-lists/build/sonarwatch.polygon.tokenlist.json",
+          "Optimism": "https://cdn.jsdelivr.net/npm/@sonarwatch/token-lists/build/sonarwatch.optimism.tokenlist.json",
+          "Avalanche": "https://cdn.jsdelivr.net/npm/@sonarwatch/token-lists/build/sonarwatch.avalanche.tokenlist.json",
+          "Aptos": "https://cdn.jsdelivr.net/npm/@sonarwatch/token-lists/build/sonarwatch.aptos.tokenlist.json",
+          "Solana": "https://cdn.jsdelivr.net/npm/@sonarwatch/token-lists/build/sonarwatch.solana.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Silverline",
+        "Urls": {
+          "BSC": "https://raw.githubusercontent.com/top1st/token-assets/main/token-lists/silverlineswap-extended.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Solana",
+        "Urls": {
+          "Solana": "https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/solana.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "LibraX",
+        "Urls": {
+          "Avalanche": "https://cdn.jsdelivr.net/npm/@librax/token-lists/lists/librax-extended.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Ubeswap",
+        "Urls": {
+          "Celo": "https://cdn.jsdelivr.net/npm/@ubeswap/default-token-list/ubeswap.token-list.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "PancakeSwap",
+        "Urls": {
+          "BSC": "https://tokens.pancakeswap.finance/pancakeswap-extended.json",
+          "ArbitrumOne": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-arbitrum-default.json",
+          "Base": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-base-default.json",
+          "Ethereum": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-eth-default.json",
+          "Linea": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-linea-default.json",
+          "OpBNB": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-opbnb-default.json",
+          "ZkEvm": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-polygon-zkevm-default.json",
+          "Scroll": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-scroll-default.json",
+          "ZkSync": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-zksync-default.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Comethswap",
+        "Urls": {
+          "Polygon": "https://unpkg.com/@cometh-game/default-token-list/build/comethswap-default.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Jarvis",
+        "Urls": {
+          "Polygon": "https://gateway.pinata.cloud/ipfs/QmPs3EX688haEMgp49QLqoKApMukU6yaaApRr6C6ax1kWZ"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Dfyn",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/dfyn/new-host/main/list-token.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Pangolin",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "TraderJoe",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/mc.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SpookySwap",
+        "Urls": {
+          "Fantom": "https://raw.githubusercontent.com/SpookySwap/spooky-info/master/src/constants/token/spookyswap.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Arbitrum",
+        "Urls": {
+          "ArbitrumOne": "https://tokenlist.arbitrum.io/ArbTokenLists/arbed_arb_whitelist_era.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ParaSwap",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/paraswap.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ParaSwapStablecoins",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/paraswap.stablelist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "PowerSwap",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/powerswap/powerswap-tokenlist/master/powerswap_tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SushiSwap",
+        "Urls": {
+          "None": "https://cdn.jsdelivr.net/npm/@sushiswap/default-token-list/build/sushiswap-default.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SushiSwapPools",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/sushiswap-pools.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SushiSwapPairs",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/sushiswap-pairs.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "ViaProtocol",
+        "Urls": {
+          "Songbird": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/19.json",
+          "BitTorrent": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/199.json",
+          "Kava": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/2222.json",
+          "ArbitrumOne": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/arbitrum.json",
+          "Astar": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/astar.json",
+          "Telos": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/telos.json",
+          "Polygon": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/polygon.json",
+          "Palm": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/palm.json",
+          "Optimism": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/optimism.json",
+          "Moonriver": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/moonriver.json",
+          "Moonbeam": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/moonbeam.json",
+          "Harmony": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/harmony.json",
+          "Gnosis": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/gnosis.json",
+          "Fuse": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/fuse.json",
+          "Fantom": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/ftm.json",
+          "Evmos": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/evmos.json",
+          "Ethereum": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/ethereum.json",
+          "Cube": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/cube.json",
+          "Cronos": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/cronos.json",
+          "Celo": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/celo.json",
+          "BSC": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/bsc.json",
+          "Boba": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/boba.json",
+          "Avalanche": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/avax.json",
+          "Aurora": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/all_tokens/aurora.json",
+          "OKXChain": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/tokenlists/okex.json",
+          "KCC": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/tokenlists/kcc.json",
+          "Huobi": "https://raw.githubusercontent.com/viaprotocol/tokenlists/main/tokenlists/heco.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "SoulSwap",
+        "Urls": {
+          "Telos": "https://raw.githubusercontent.com/SoulSwapFinance/default-token-list/master/tokens/telos.json",
+          "Polygon": "https://raw.githubusercontent.com/SoulSwapFinance/default-token-list/master/tokens/matic.json",
+          "Fantom": "https://raw.githubusercontent.com/SoulSwapFinance/default-token-list/master/tokens/fantom.json",
+          "Ethereum": "https://raw.githubusercontent.com/SoulSwapFinance/default-token-list/master/tokens/ethereum.json",
+          "BSC": "https://raw.githubusercontent.com/SoulSwapFinance/default-token-list/master/tokens/bsc.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "PlasmaSwap",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SoulSwapFinance/default-token-list/master/tokens/bsc.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "GoSwap",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/go-protocol/goswap-tokenlist/main/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "MochiSwap",
+        "Urls": {
+          "BSC": "https://raw.githubusercontent.com/mochiswap/mochiswap-tokenlist-bsc/main/src/tokens/bsc-mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ShibaSwap",
+        "Urls": {
+          "Fantom": "https://raw.githubusercontent.com/Shiba-Fantom/shibaswap-tokenlist/main/token/shibaswap.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "FalconSwap",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/FalconSwap/tokenlist/main/blockchains/eth/list.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "AlvisFinance",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/Alvis-Finance/tokenlists/main/avax.tokenlist.json",
+          "Polygon": "https://raw.githubusercontent.com/Alvis-Finance/tokenlists/main/polygon.tokenlist.json",
+          "BSC": "https://raw.githubusercontent.com/Alvis-Finance/tokenlists/main/bsc.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ImpossibleFinance",
+        "Urls": {
+          "Boba": "https://raw.githubusercontent.com/ImpossibleFinance/boba-community-tokenlist/main/tokenlist.json",
+          "Avalanche": "https://raw.githubusercontent.com/ImpossibleFinance/avax-tokenlist/main/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "WrappedFi",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/wrappedfi/wrapped-tokenlist/main/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "YetiSwap",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/YetiSwap/tokenlists/main/aeb.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Evmosis",
+        "Urls": {
+          "Evmos": "https://raw.githubusercontent.com/evmosis/tokenlist/main/src/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "VertoDex",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/verto-dex/tokenlist/main/src/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "DiffusionFi",
+        "Urls": {
+          "Evmos": "https://raw.githubusercontent.com/diffusion-fi/tokenlist/main/src/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "OpenXswap",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Avalanche/openXswap.json",
+          "Polygon": "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Polygon/openXswap.json",
+          "Optimism": "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Optimism/openXswap.json",
+          "Harmony": "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Harmony/openXswap.json",
+          "Fantom": "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Fantom/openXswap.json",
+          "Ethereum": "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/Ethereum/openXswap.json",
+          "BSC": "https://raw.githubusercontent.com/openXswap/openXswap-tokenlists/master/BSC/openXswap.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ActaFi",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/ActaFi/actafi-tokenlists/main/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ZappyFinance",
+        "Urls": {
+          "Telos": "https://raw.githubusercontent.com/zappy-finance/zappy-tokenlists/main/zappy.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "LeetSwap",
+        "Urls": {
+          "Canto": "https://raw.githubusercontent.com/LeetSwap/tokenlist/master/src/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Yearn",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/yearn.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "YearnExtended",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/yearn-extended.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Wido",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/wido.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Tokenlistooor",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/tokenlistooor.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Portals",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/portals.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Ledger",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/ledger.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "DefiLlama",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/defillama.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Curve",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/curve.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "CoWSwap",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/cowswap.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Euler",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/euler-xyz/euler-tokenlist/master/euler-tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "VenomSwap",
+        "Urls": {
+          "Harmony": "https://raw.githubusercontent.com/VenomProtocol/venomswap-community-token-list/main/src/tokens/harmony-mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "LootSwap",
+        "Urls": {
+          "BSC": "https://raw.githubusercontent.com/LootSwap/lootswap-default-token-list/main/src/tokens/bsc-mainnet.json",
+          "Ethereum": "https://raw.githubusercontent.com/LootSwap/lootswap-default-token-list/main/src/tokens/mainnet.json",
+          "Harmony": "https://raw.githubusercontent.com/LootSwap/lootswap-default-token-list/main/src/tokens/harmony-mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "IncrementFi",
+        "Urls": {
+          "Flow": "https://raw.githubusercontent.com/IncrementFi/token-list/main/tokenlist.mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Zircon",
+        "Urls": {
+          "None": "https://github.com/Zircon-Finance/zircon-interface/blob/master/public/tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "OmniDex",
+        "Urls": {
+          "Telos": "https://raw.githubusercontent.com/OmniDexFinance/tokenList/master/omnidex-default.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "BoggedFinance",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/avax/tokenlist.json",
+          "BSC": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/bsc/tokenlist.json",
+          "Cronos": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/cro/tokenlist.json",
+          "Fantom": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/ftm/tokenlist.json",
+          "Huobi": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/heco/tokenlist.json",
+          "KCC": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/kcc/tokenlist.json",
+          "Moonriver": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/movr/tokenlist.json",
+          "OKXChain": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/oec/tokenlist.json",
+          "Harmony": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/one/tokenlist.json",
+          "Polygon": "https://raw.githubusercontent.com/BoggedFinance/Bogged-Token-List/main/polygon/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "CoinMarketCap",
+        "Urls": {
+          "BSC": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/cmc.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "MaticNetwork",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/arbitrum.json",
+          "Avalanche": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/avalanche.json",
+          "BSC": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/bsc.json",
+          "Ethereum": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/ethereum.json",
+          "Fantom": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/fantom.json",
+          "Fuse": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/fuse.json",
+          "Gnosis": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/gnosis.json",
+          "Moonbeam": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/moonbeam.json",
+          "Moonriver": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/moonriver.json",
+          "Optimism": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/crossChain/optimism.json",
+          "Polygon": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/polygon.json",
+          "ZkEvm": "https://raw.githubusercontent.com/maticnetwork/polygon-token-list/dev/src/tokens/zkevmPopularTokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "VenomProtocol",
+        "Urls": {
+          "Harmony": "https://raw.githubusercontent.com/VenomProtocol/venomswap-community-token-list/main/src/tokens/harmony-mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "ChainDropOrg",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/ChainDropOrg/token-list/main/data/tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ThunderCore",
+        "Urls": {
+          "ThunderCore": "https://raw.githubusercontent.com/thundercore/token-list/master/src/thundercore.json"
+        },
+        "DefaultChainId": "ThunderCore"
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "PancakeSwapAptos",
+        "Urls": {
+          "Aptos": "https://raw.githubusercontent.com/pancakeswap/token-list/main/lists/pancakeswap-aptos.json"
+        },
+        "ChainIdSubstitutions": {
+          "Ethereum": "Aptos"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ApeSwap",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/ApeSwapFinance/apeswap-token-lists/main/lists/apeswap.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Scroll",
+        "Urls": {
+          "Scroll": "https://raw.githubusercontent.com/scroll-tech/token-list/main/scroll.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "CryptoCom",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/crypto-com/swap-token-list/master/src/tokens/mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "TelosNetwork",
+        "Urls": {
+          "Telos": "https://raw.githubusercontent.com/telosnetwork/token-list/main/tokens.telos.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "OneHive",
+        "Urls": {
+          "Gnosis": "https://raw.githubusercontent.com/1Hive/default-token-list/master/src/tokens/gnosis.json",
+          "Ethereum": "https://raw.githubusercontent.com/1Hive/default-token-list/master/src/tokens/mainnet.json",
+          "Polygon": "https://raw.githubusercontent.com/1Hive/default-token-list/master/src/tokens/polygon.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SolarBeam",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/solarbeamio/solarbeam-tokenlist/main/solarbeam.tokenlist.json",
+          "Moonriver": "https://raw.githubusercontent.com/solarbeamio/solarbeam-tokenlist/main/community.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "RainbowWallet",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/rainbow-me/rainbow-token-list/main/output/rainbow-token-list.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Consensys",
+        "Urls": {
+          "Linea": "https://raw.githubusercontent.com/Consensys/linea-token-list/main/json/linea-mainnet-token-fulllist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ComboLabs",
+        "Urls": {
+          "Combo": "https://raw.githubusercontent.com/ComboLabs/ComboTokenList/master/combo.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "LiFi",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/ARB.json",
+          "Avalanche": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/AVA.json",
+          "Base": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/BAS.json",
+          "BSC": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/BSC.json",
+          "Celo": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/CEL.json",
+          "Gnosis": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/DAI.json",
+          "ZkSync": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/ERA.json",
+          "Ethereum": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/ETH.json",
+          "Fantom": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/FTM.json",
+          "Fusion": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/FUS.json",
+          "Linea": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/LNA.json",
+          "Moonbeam": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/MOO.json",
+          "Moonriver": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/MOR.json",
+          "OKXChain": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/OKT.json",
+          "Optimism": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/OPT.json",
+          "Polygon": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/POL.json",
+          "ZkEvm": "https://raw.githubusercontent.com/lifinance/customized-token-list/main/tokens/PZE.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Mantle",
+        "Urls": {
+          "Mantle": "https://raw.githubusercontent.com/mantlenetworkio/mantle-token-lists/main/mantle.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Etherspot",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/arbitrum.tokenlist.json",
+          "BSC": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/binance.tokenlist.json",
+          "Ethereum": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/ethereum.tokenlist.json",
+          "Gnosis": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/gnosis.tokenlist.json",
+          "None": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/multichain.tokenlist.json",
+          "OKXChain": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/oktc.tokenlist.json",
+          "Optimism": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/optimism.tokenlist.json",
+          "Polygon": "https://raw.githubusercontent.com/etherspot/etherspot-popular-tokens-tokenlist/master/polygon.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ElkFinance",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/elkfinance/tokens/main/all.tokenlist.json",
+          "ArbitrumOne": "https://raw.githubusercontent.com/elkfinance/tokens/main/arbitrum.tokenlist.json",
+          "Astar": "https://raw.githubusercontent.com/elkfinance/tokens/main/astar.tokenlist.json",
+          "Avalanche": "https://raw.githubusercontent.com/elkfinance/tokens/main/avax.tokenlist.json",
+          "Base": "https://raw.githubusercontent.com/elkfinance/tokens/main/base.tokenlist.json",
+          "Bitgert": "https://raw.githubusercontent.com/elkfinance/tokens/main/bitgert.tokenlist.json",
+          "BSC": "https://raw.githubusercontent.com/elkfinance/tokens/main/bsc.tokenlist.json",
+          "BitTorrent": "https://raw.githubusercontent.com/elkfinance/tokens/main/bttc.tokenlist.json",
+          "Cronos": "https://raw.githubusercontent.com/elkfinance/tokens/main/cronos.tokenlist.json",
+          "Elastos": "https://raw.githubusercontent.com/elkfinance/tokens/main/elastos.tokenlist.json",
+          "Ethereum": "https://raw.githubusercontent.com/elkfinance/tokens/main/ethereum.tokenlist.json",
+          "Fantom": "https://raw.githubusercontent.com/elkfinance/tokens/main/ftm.tokenlist.json",
+          "Fuse": "https://raw.githubusercontent.com/elkfinance/tokens/main/fuse.tokenlist.json",
+          "Harmony": "https://raw.githubusercontent.com/elkfinance/tokens/main/harmony.tokenlist.json",
+          "Huobi": "https://raw.githubusercontent.com/elkfinance/tokens/main/heco.tokenlist.json",
+          "IOTEX": "https://raw.githubusercontent.com/elkfinance/tokens/main/iotex.tokenlist.json",
+          "Kava": "https://raw.githubusercontent.com/elkfinance/tokens/main/kava.tokenlist.json",
+          "KCC": "https://raw.githubusercontent.com/elkfinance/tokens/main/kcc.tokenlist.json",
+          "Linea": "https://raw.githubusercontent.com/elkfinance/tokens/main/linea.tokenlist.json",
+          "Polygon": "https://raw.githubusercontent.com/elkfinance/tokens/main/matic.tokenlist.json",
+          "Metis": "https://raw.githubusercontent.com/elkfinance/tokens/main/metis.tokenlist.json",
+          "Moonriver": "https://raw.githubusercontent.com/elkfinance/tokens/main/moonriver.tokenlist.json",
+          "NeonEvm": "https://raw.githubusercontent.com/elkfinance/tokens/main/neon.tokenlist.json",
+          "OKXChain": "https://raw.githubusercontent.com/elkfinance/tokens/main/okex.tokenlist.json",
+          "Optimism": "https://raw.githubusercontent.com/elkfinance/tokens/main/optimism.tokenlist.json",
+          "Q": "https://raw.githubusercontent.com/elkfinance/tokens/main/q.tokenlist.json",
+          "Telos": "https://raw.githubusercontent.com/elkfinance/tokens/main/telos.tokenlist.json",
+          "Velas": "https://raw.githubusercontent.com/elkfinance/tokens/main/velas.tokenlist.json",
+          "Wanchain": "https://raw.githubusercontent.com/elkfinance/tokens/main/wan.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Zapper",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/Zapper-fi/token-list/master/zapper.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "FlowFans",
+        "Urls": {
+          "Flow": "https://raw.githubusercontent.com/FlowFans/flow-token-list/main/src/tokens/flow-mainnet.tokenlist.json"
+        },
+        "DefaultChainId": "Flow"
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "BraveSolana",
+        "Urls": {
+          "Solana": "https://raw.githubusercontent.com/brave/token-lists/main/data/solana/tokenlist.json"
+        },
+        "DefaultChainId": "Solana"
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "PlasmaFinance",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/plasmadlt/plasma-finance-token-list/master/plasma-finance-token-list.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "DFK",
+        "Urls": {
+          "Harmony": "https://raw.githubusercontent.com/KingdomStudiosIO/community-token-list/main/src/defikingdoms-default.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Meterio",
+        "Urls": {
+          "Meter": "https://raw.githubusercontent.com/meterio/token-list/master/generated/meter-tokens.json",
+          "None": "https://raw.githubusercontent.com/meterio/token-list/master/generated/swap-tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "VoltswapV2",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/meterio/token-list/master/generated/voltswapv2-tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "MeterWallet",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/meterio/token-list/master/generated/wallet-tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "MilkySwap",
+        "Urls": {
+          "Milkomeda": "https://raw.githubusercontent.com/milkyswap/default-token-list/master/tokens/milkomeda.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "CamelotLabs",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/CamelotLabs/default-token-list/main/src/tokens/arbitrum-one.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ThugsDeFi",
+        "Urls": {
+          "BSC": "https://raw.githubusercontent.com/thugs-defi/swap-token-list/master/tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SolflareWallet",
+        "Urls": {
+          "Solana": "https://raw.githubusercontent.com/solflare-wallet/token-list/master/solana-tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "Mask",
+        "Urls": {
+          "Base": "https://raw.githubusercontent.com/DimensionDev/Mask-Token-Lists/master/public/fungible-tokens/base.json",
+          "Scroll": "https://raw.githubusercontent.com/DimensionDev/Mask-Token-Lists/master/public/fungible-tokens/scroll.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "LuaSwap",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/BuildOnViction/luaswap-token-list/master/src/tokens/mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "NeonLabs",
+        "Urls": {
+          "NeonEvm": "https://raw.githubusercontent.com/neonlabsorg/token-list/main/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Pro100skm",
+        "Urls": {
+          "XDC": "https://raw.githubusercontent.com/pro100skm/xdc-token-list/master/mainnet.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "CronaSwap",
+        "Urls": {
+          "Cronos": "https://raw.githubusercontent.com/cronaswap/default-token-list/main/assets/tokens/cronos.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "NarwhalSwap",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/narwhalswap/default-token-list/master/src/tokens/avalanche.json",
+          "BSC": "https://raw.githubusercontent.com/narwhalswap/default-token-list/master/src/tokens/bsc.json",
+          "Fantom": "https://raw.githubusercontent.com/narwhalswap/default-token-list/master/src/tokens/fantom.json",
+          "Harmony": "https://raw.githubusercontent.com/narwhalswap/default-token-list/master/src/tokens/harmony.json",
+          "Polygon": "https://raw.githubusercontent.com/narwhalswap/default-token-list/master/src/tokens/matic.json",
+          "Moonbeam": "https://raw.githubusercontent.com/narwhalswap/default-token-list/master/src/tokens/moonbeam.json",
+          "Moonriver": "https://raw.githubusercontent.com/narwhalswap/default-token-list/master/src/tokens/moonriver.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "EquilibreFinance",
+        "Urls": {
+          "Kava": "https://raw.githubusercontent.com/equilibre-finance/tokens/main/list.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "DerpDex",
+        "Urls": {
+          "Base": "https://raw.githubusercontent.com/derpdex-official/token-list/main/base.tokenlist.json",
+          "OpBnb": "https://raw.githubusercontent.com/derpdex-official/token-list/main/opbnb.tokenlist.json",
+          "ZkSync": "https://raw.githubusercontent.com/derpdex-official/token-list/main/zksync.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "Coin98",
+        "Urls": {
+          "Solana": "https://raw.githubusercontent.com/coin98/saros-lp-token-list/master/solana-token-list/tokens.mainnet-beta.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "SonarWatchAptos",
+        "Urls": {
+          "Aptos": "https://raw.githubusercontent.com/sonarwatch/token-lists/main/src/tokens/aptos.json"
+        },
+        "ChainIdSubstitutions": {
+          "Ethereum": "Aptos"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "SonarWatchSolana",
+        "Urls": {
+          "Solana": "https://raw.githubusercontent.com/sonarwatch/token-lists/main/src/tokens/solana.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Hera",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/heraaggregator/token-lists/main/hera-arbitrum.json",
+          "Metis": "https://raw.githubusercontent.com/heraaggregator/token-lists/main/heramain-v2.tokenlist.json",
+          "Mantle": "https://raw.githubusercontent.com/heraaggregator/token-lists/main/hera-mantle.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ParaSwapCommunity",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/paraswap.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "SablierLabs",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/arbitrum_mainnet.json",
+          "Scroll": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/scroll_mainnet.json",
+          "Polygon": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/polygon_mainnet.json",
+          "Optimism": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/optimism_mainnet.json",
+          "Gnosis": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/gnosis_mainnet.json",
+          "Ethereum": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/ethereum_mainnet.json",
+          "BSC": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/bsc_mainnet.json",
+          "Base": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/base_mainnet.json",
+          "Avalanche": "https://raw.githubusercontent.com/sablier-labs/community-token-list/main/src/tokens/avalanche_mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "MantleSwap",
+        "Urls": {
+          "Mantle": "https://raw.githubusercontent.com/mantleswap/default-token-list/main/assets/tokens/mantle.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "Fuseio",
+        "Urls": {
+          "Fuse": "https://raw.githubusercontent.com/fuseio/fuseswap-default-token-list/master/src/tokens/fuse.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "DoBestMan",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/avalanche.json",
+          "Gnosis": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/xdai.json",
+          "Polygon": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/matic.json",
+          "Ethereum": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/mainnet.json",
+          "Huobi": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/heco.json",
+          "Harmony": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/harmony.json",
+          "Fantom": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/fantom.json",
+          "BSC": "https://raw.githubusercontent.com/DoBestMan/default-token-list/main/src/tokens/bsc.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "VenusProtocol",
+        "Urls": {
+          "BSC": "https://raw.githubusercontent.com/VenusProtocol/default-token-list/master/src/tokens/mainnet.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Swene",
+        "Urls": {
+          "BSC": "https://raw.githubusercontent.com/swene/token-list/main/bsc/index.json",
+          "Gnosis": "https://raw.githubusercontent.com/swene/token-list/main/xdai/index.json",
+          "Polygon": "https://raw.githubusercontent.com/swene/token-list/main/matic/index.json",
+          "Ethereum": "https://raw.githubusercontent.com/swene/token-list/main/eth/index.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ComplusNetwork",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/complusnetwork/default-token-list/master/default-tokenlist-ava.json",
+          "Polygon": "https://raw.githubusercontent.com/complusnetwork/default-token-list/master/default-tokenlist-matic.json",
+          "Huobi": "https://raw.githubusercontent.com/complusnetwork/default-token-list/master/default-tokenlist-heco.json",
+          "BSC": "https://raw.githubusercontent.com/complusnetwork/default-token-list/master/default-tokenlist-bsc.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "HarmonyOne",
+        "Urls": {
+          "Harmony": "https://raw.githubusercontent.com/harmony-one/swap-token-list/main/tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "YuzuSwap",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/avalanche.json",
+          "Gnosis": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/xdai.json",
+          "OKXChain": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/okchain.json",
+          "OasysEmerald": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/oasiseth-main.json",
+          "Polygon": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/matic.json",
+          "Ethereum": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/mainnet.json",
+          "Huobi": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/heco.json",
+          "Fantom": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/fantom.json",
+          "BSC": "https://raw.githubusercontent.com/Yuzu-swap/default-token-list/master/src/tokens/bsc.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "AtomicVM",
+        "Urls": {
+          "ArbitrumOne": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/arbitrum.json",
+          "Avalanche": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/avalanche.json",
+          "BSC": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/bsc.json",
+          "Gnosis": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/xdai.json",
+          "Shiden": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/shiden.json",
+          "Palm": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/palm.json",
+          "OKXChain": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/okex.json",
+          "Moonriver": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/moonriver.json",
+          "Moonbase": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/moonbase.json",
+          "Polygon": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/matic.json",
+          "Ethereum": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/mainnet.json",
+          "Huobi": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/heco.json",
+          "Harmony": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/harmony.json",
+          "Fantom": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/fantom.json",
+          "Celo": "https://raw.githubusercontent.com/atomicvm/default-token-list/master/tokens/celo.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "EmbrFinance",
+        "Urls": {
+          "Avalanche": "https://raw.githubusercontent.com/embrfinance/tokenlist/main/tokens.avalanche.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Galxe",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/Galxe/galxe-token-list/main/src/tokens.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SolyardFinance",
+        "Urls": {
+          "Solana": "https://raw.githubusercontent.com/SolyardFinance/token-list/main/src/tokens/solana.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SpaceFinance",
+        "Urls": {
+          "Evmos": "https://raw.githubusercontent.com/SpaceFinance/default-token-list/main/spaceswap.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "Civitas",
+        "Urls": {
+          "Gnosis": "https://raw.githubusercontent.com/Civitas-Fundamenta/TokenLists/main/xdai_honeyswap.tokenlist.json",
+          "Fantom": "https://raw.githubusercontent.com/Civitas-Fundamenta/TokenLists/main/ftm_spookyswap.tokenlist.json",
+          "Cronos": "https://raw.githubusercontent.com/Civitas-Fundamenta/TokenLists/main/cro_crodex.tokenlist.json",
+          "BSC": "https://raw.githubusercontent.com/Civitas-Fundamenta/TokenLists/main/bnb_pancakeswap.tokenlist.json",
+          "Avalanche": "https://raw.githubusercontent.com/Civitas-Fundamenta/TokenLists/main/avax_trader_joe.tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Aerodrome",
+        "Urls": {
+          "Base": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/aerodrome.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "SmolDapp",
+        "Urls": {
+          "None": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/smolAssets.json",
+          "ZkSync": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/zksync.json",
+          "Optimism": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/optimism.json",
+          "Ethereum": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/etherscan.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Ajna",
+        "Urls": {
+          "Ethereum": "https://raw.githubusercontent.com/SmolDapp/tokenLists/main/lists/ajna.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Manta",
+        "Urls": {
+          "Manta": "https://raw.githubusercontent.com/Manta-Network/manta-pacific-token-list/main/json/manta-pacific-mainnet-token-list.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "ArchlyFi",
+        "Urls": {
+          "ArbitrumNova": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-arbitrum-nova.json",
+          "Telos": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-telos.json",
+          "Polygon": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-polygon.json",
+          "Optimism": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-optimism.json",
+          "Kava": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-kava.json",
+          "Fantom": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-fantom.json",
+          "BSC": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-bsc.json",
+          "Base": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-base.json",
+          "ArbitrumOne": "https://raw.githubusercontent.com/ArchlyFi/token-list/main/tokenlist-arbitrum-one.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "InterportFinance",
+        "Urls": {
+          "ZkEvm": "https://raw.githubusercontent.com/Interport-Finance/token-list/main/src/tokens/1101.json",
+          "Base": "https://raw.githubusercontent.com/Interport-Finance/token-list/main/src/tokens/8453.json",
+          "Linea": "https://raw.githubusercontent.com/Interport-Finance/token-list/main/src/tokens/59144.json",
+          "Scroll": "https://raw.githubusercontent.com/Interport-Finance/token-list/main/src/tokens/534352.json",
+          "ZkSync": "https://raw.githubusercontent.com/Interport-Finance/token-list/main/src/tokens/324.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": false,
+        "Provider": "Piteas",
+        "Urls": {
+          "Pulse": "https://raw.githubusercontent.com/piteasio/app-tokens/main/piteas-tokenlist.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "CanaLabs",
+        "Urls": {
+          "Solana": "https://raw.githubusercontent.com/kanalabs/token-lists/main/solana.json",
+          "Polygon": "https://raw.githubusercontent.com/kanalabs/token-lists/main/polygon.json",
+          "Klaytn": "https://raw.githubusercontent.com/kanalabs/token-lists/main/klaytn.json",
+          "Fantom": "https://raw.githubusercontent.com/kanalabs/token-lists/main/fantom.json",
+          "Ethereum": "https://raw.githubusercontent.com/kanalabs/token-lists/main/ethereum.json",
+          "BSC": "https://raw.githubusercontent.com/kanalabs/token-lists/main/bsc.json",
+          "Base": "https://raw.githubusercontent.com/kanalabs/token-lists/main/base.json",
+          "Avalanche": "https://raw.githubusercontent.com/kanalabs/token-lists/main/avalanche.json"
+        }
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "CanaLabsAptos",
+        "Urls": {
+          "Aptos": "https://raw.githubusercontent.com/kanalabs/token-lists/main/aptos.json"
+        },
+        "DefaultChainId": "Aptos"
+      },
+      {
+        "IsEnabled": true,
+        "IsResponseList": true,
+        "Provider": "ParaSwapExtended",
+        "Urls": {
+          "Polygon": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/tokens/polygon.json",
+          "Optimism": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/tokens/optimism.json",
+          "Ethereum": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/tokens/mainnet.json",
+          "Fantom": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/tokens/fantom.json",
+          "BSC": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/tokens/bnb.json",
+          "Avalanche": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/tokens/avalanche.json",
+          "ArbitrumOne": "https://raw.githubusercontent.com/paraswap/community-token-list/master/src/sources/tokens/arbitrum.json"
+        }
+      }
+    ]
+  }
+}

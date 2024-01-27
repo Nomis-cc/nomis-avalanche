@@ -1,0 +1,8 @@
+{
+  "RedisSettings": {
+    "UseRedis": false,
+    "Password": null,
+    "ConnectionString": "127.0.0.1",
+    "InstanceName": "redis"
+  }
+}

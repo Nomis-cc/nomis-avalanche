@@ -1,0 +1,19 @@
+{
+  "CovalentSettings": {
+    "ApiBaseUrl": "https://api.covalenthq.com/",
+    "ApiKey": "",
+    "MaxApiCallsPerSecond": 50,
+    "UseTokenBalancesCaching": true,
+    "TokenBalancesCacheDuration": "00:15:00",
+    "UseNftBalancesCaching": true,
+    "NftTokenBalancesCacheDuration": "00:15:00",
+    "HttpClientTimeout": "00:01:15",
+    "UseHttpClientRetrying": true,
+    "MaxRetries": 3,
+    "UseDefaultRetryTimeout": false,
+    "DefaultRetryTimeout": "00:00:01",
+    "RetryTimeouts": {
+      "TooManyRequests": "00:00:01"
+    }
+  }
+}
